@@ -1,0 +1,335 @@
+/* AMD Header & Navigation */
+.amd-header {
+    background-color: var(--amd-dark);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.amd-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.amd-main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.amd-nav-item a {
+    color: var(--amd-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.amd-nav-item a:hover {
+    color: var(--amd-red);
+}
+
+.amd-nav-item.active a {
+    color: var(--amd-red);
+}
+
+.amd-nav-item.active a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--amd-red);
+}
+
+/* AMD Color Variables */
+:root {
+    --amd-red: #ED1C24;
+    --amd-dark: #0A0A0A;
+    --amd-dark-gray: #1A1A1A;
+    --amd-white: #FFFFFF;
+}
+
+/* Ryzen Page Styles */
+.ryzen-page {
+    font-family: 'AMD Standard', 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--amd-dark);
+    color: var(--amd-white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Logo */
+.amd-logo img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.amd-logo:hover img {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.ryzen-hero {
+    position: relative;
+    margin-top: 80px;
+    height: calc(80vh - 80px);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(10,10,10,0.9) 100%);
+    color: var(--amd-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(237,28,36,0.2);
+}
+
+.ryzen-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.ryzen-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.ryzen-hero-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.ryzen-chip {
+    width: 80px;
+    height: 80px;
+    background: url('../images/logo.webp') center/contain no-repeat;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+/* Processor Lineup */
+.ryzen-lineup {
+    padding: 4rem 2rem;
+    background-color: var(--amd-dark-gray);
+    text-align: center;
+}
+
+.ryzen-lineup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--amd-white);
+}
+
+.ryzen-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ryzen-card {
+    background: var(--amd-dark-gray);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 300px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(237,28,36,0.1);
+}
+
+.ryzen-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(237,28,36,0.2);
+    border-color: rgba(237,28,36,0.3);
+}
+
+.ryzen-card-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--amd-dark-gray);
+}
+
+.ryzen-card-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.ryzen-card:hover .ryzen-card-image img {
+    transform: scale(1.05);
+}
+
+.ryzen-card-details {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.ryzen-card-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--amd-white);
+    transition: color 0.3s ease;
+}
+
+.ryzen-card:hover .ryzen-card-details h3 {
+    color: var(--amd-red);
+}
+
+.ryzen-card-details p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Threadripper Section */
+.threadripper-section {
+    padding: 4rem 2rem;
+    background-color: #333333;
+    text-align: center;
+}
+
+.threadripper-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--amd-white);
+}
+
+.threadripper-section p {
+    color: rgba(255,255,255,0.7);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Features Section */
+.ryzen-features {
+    padding: 4rem 2rem;
+    background-color: var(--amd-dark);
+    text-align: center;
+}
+
+.ryzen-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--amd-white);
+    position: relative;
+}
+
+.ryzen-features h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--amd-red);
+    margin: 1rem auto 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: var(--amd-dark-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(237,28,36,0.1);
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(237,28,36,0.2);
+    border-color: rgba(237,28,36,0.3);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: url('../images/logo.png') center/contain no-repeat;
+}
+
+.feature-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--amd-white);
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover h4 {
+    color: var(--amd-red);
+}
+
+.feature-item p {
+    color: rgba(255,255,255,0.7);
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover p {
+    color: var(--amd-white);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ryzen-hero {
+        height: 60vh;
+    }
+    
+    .ryzen-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .ryzen-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .ryzen-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}

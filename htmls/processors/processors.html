@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD Ryzen Processors</title>
+    <link rel="icon" type="image/png" href="../../images/logs.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="processors.css">
+</head>
+<body class="ryzen-page">
+    <!-- Announcement Bar -->
+    <div class="amd-announcement-bar">
+        <p>New AMD Processors <a href="processors.html">Learn More</a></p>
+        <button class="close-announcement" aria-label="Close Announcement">&times;</button>
+    </div>
+
+  <!-- Header -->
+  <header class="amd-header">
+    <div class="amd-header-container">
+        <div class="amd-logo">
+            <a href="../../index.html"><img src="../../images/logo.webp" alt="AMD Logo"></a>
+        </div>
+        <nav class="amd-main-nav">
+            <ul class="amd-nav-list">
+                <li class="amd-nav-item"><a href="../../index.html">Home</a></li>
+                <li class="amd-nav-item mega-menu">
+                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="amd-mega-menu">
+                        <div class="mega-menu-column">
+                            <h3>Processors</h3>
+                            <ul>
+                                <li><a href="htmls/processors/processors.html">Ryzen™ Desktop Processors</a></li>
+                            </ul>
+                        </div>
+                </li>
+                <li class="amd-nav-item"><a href="../shop/shop.html">Shop</a></li>
+                <li class="amd-nav-item"><a href="../AboutUs.html">About Us</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+    <!-- Ryzen Hero Section -->
+    <section class="ryzen-hero">
+        <div class="ryzen-hero-content">
+            <h1>AMD Ryzen™ Desktop Processors</h1>
+            <p>Ultimate performance for gamers and creators</p>
+        </div>
+        <div class="ryzen-hero-animation" id="ryzenAnimation"></div>
+    </section>
+
+    <!-- Processor Lineup -->
+    <section class="ryzen-lineup">
+        <h2>Ryzen Processor Family</h2>
+        <div class="ryzen-cards-container">
+            <div class="ryzen-card">
+                <div class="ryzen-card-image">
+                    <img src="../../images/product1.jpg" alt="Ryzen 9">
+                </div>
+                <div class="ryzen-card-details">
+                    <h3>Ryzen 9</h3>
+                    <p><strong>Cores:</strong> Up to 16 cores</p>
+                    <p><strong>Max Boost:</strong> Up to 5.7GHz</p>
+                    <p><strong>Cache:</strong> Up to 80MB</p>
+                </div>
+            </div>
+            <div class="ryzen-card">
+                <div class="ryzen-card-image">
+                    <img src="../../images/ryzen7.webp" alt="Ryzen 7">
+                </div>
+                <div class="ryzen-card-details">
+                    <h3>Ryzen 7</h3>
+                    <p><strong>Cores:</strong> Up to 8 cores</p>
+                    <p><strong>Max Boost:</strong> Up to 5.3GHz</p>
+                    <p><strong>Cache:</strong> Up to 40MB</p>
+                </div>
+            </div>
+            <div class="ryzen-card">
+                <div class="ryzen-card-image">
+                    <img src="../../images/ryzen5.webp" alt="Ryzen 5">
+                </div>
+                <div class="ryzen-card-details">
+                    <h3>Ryzen 5</h3>
+                    <p><strong>Cores:</strong> Up to 6 cores</p>
+                    <p><strong>Max Boost:</strong> Up to 4.6GHz</p>
+                    <p><strong>Cache:</strong> Up to 38MB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="ryzen-features">
+        <h2>Innovative Technologies</h2>
+        <p class="feature-intro">AMD Ryzen processors feature cutting-edge technologies like Precision Boost 2, Extended Frequency Range (XFR), and AMD StoreMI that work together to deliver exceptional performance and responsiveness for gaming and content creation.</p>
+        <div class="feature-grid">
+            <!-- Features will be populated by processors.js -->
+        </div>
+    </section>
+
+    <script src="processors.js"></script>
+    <script src="../../script/script.js"></script>
+</body>
+</html>
